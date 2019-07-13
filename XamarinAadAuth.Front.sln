@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAadAuth.Front.Android", "XamarinAadAuth.Front\XamarinAadAuth.Front.Android\XamarinAadAuth.Front.Android.csproj", "{0B9E3A0E-7ECA-4A0F-9968-135D1C6F905E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAadAuth.Front.Android", "XamarinAadAuth.Front\XamarinAadAuth.Front\XamarinAadAuth.Front.Android\XamarinAadAuth.Front.Android.csproj", "{0B9E3A0E-7ECA-4A0F-9968-135D1C6F905E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAadAuth.Front.iOS", "XamarinAadAuth.Front\XamarinAadAuth.Front.iOS\XamarinAadAuth.Front.iOS.csproj", "{3C72F0F4-B4E1-4600-9DD1-CEC4F5644146}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAadAuth.Front.iOS", "XamarinAadAuth.Front\XamarinAadAuth.Front\XamarinAadAuth.Front.iOS\XamarinAadAuth.Front.iOS.csproj", "{3C72F0F4-B4E1-4600-9DD1-CEC4F5644146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAadAuth.Front", "XamarinAadAuth.Front\XamarinAadAuth.Front\XamarinAadAuth.Front.csproj", "{C1141769-9AFC-430C-B091-C5FD9DACC51E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinAadAuth.Front", "XamarinAadAuth.Front\XamarinAadAuth.Front\XamarinAadAuth.Front\XamarinAadAuth.Front.csproj", "{C1141769-9AFC-430C-B091-C5FD9DACC51E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
