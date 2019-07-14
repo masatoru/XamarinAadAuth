@@ -3,4 +3,14 @@
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
     <application android:label="XamarinAadAuth.Front.Android"></application>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application>
+      <activity android:name="microsoft.identity.client.BrowserTabActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+          <data android:scheme="msal{Your Tenant ID}" android:host="auth" />
+        </intent-filter>
+      </activity>
+    </application>
 </manifest>
