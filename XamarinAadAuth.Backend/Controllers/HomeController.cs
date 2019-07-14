@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using XamarinAadAuth.Backend.Models;
 
 namespace XamarinAadAuth.Backend.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public IActionResult Index()
@@ -20,6 +22,7 @@ namespace XamarinAadAuth.Backend.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
