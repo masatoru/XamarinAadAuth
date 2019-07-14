@@ -1,16 +1,28 @@
 ﻿using System;
+using Microsoft.Identity.Client;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinAadAuth.Front.Models;
 
 namespace XamarinAadAuth.Front
 {
     public partial class App : Application
     {
+        public static IPublicClientApplication PCA = null;
+
+        public static string[] Scopes = { "User.Read" };
+        public static string Username = string.Empty;
+        public static object ParentWindow { get; set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            PCA = PublicClientApplicationBuilder.Create(Constant.ClientId)
+                .WithRedirectUri($"msal{Constant.ClientId}://auth")
+                .Build();
+
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
